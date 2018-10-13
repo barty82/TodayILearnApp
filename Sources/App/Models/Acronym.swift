@@ -1,5 +1,5 @@
 import Vapor
-import FluentSQLite
+import FluentPostgreSQL
 
 final class Acronym: Codable {
     //MARK: - Properteis
@@ -14,14 +14,8 @@ final class Acronym: Codable {
     }
 }
 
-extension Acronym: SQLiteModel {
-    
-}
+extension Acronym: PostgreSQLModel {}
 
-extension Acronym: Migration {
-    
-}
+extension Acronym: Migration {}
 
-extension Acronym: Content {
-    
-}
+extension Acronym: Content {}
